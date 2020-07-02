@@ -50,9 +50,9 @@
         ],
         "bass_enhancer": {
             "state": "true",
-            "input-gain": "0",
-            "output-gain": "0",
-            "amount": "12",
+            "input-gain": "2",
+            "output-gain": "-5",
+            "amount": "10",
             "harmonics": "8.0000000000000018",
             "scope": "120",
             "floor": "30",
@@ -62,15 +62,15 @@
         },
         "compressor": {
             "state": "false",
-            "input-gain": "0",
-            "output-gain": "0",
+            "input-gain": "1",
+            "output-gain": "-4",
             "mode": "Upward",
             "attack": "20",
             "release": "100",
-            "threshold": "-12",
+            "threshold": "-10",
             "ratio": "4",
             "knee": "-6",
-            "makeup": "0",
+            "makeup": "-4",
             "sidechain": {
                 "listen": "false",
                 "type": "Feed-forward",
@@ -315,13 +315,13 @@
         },
         "exciter": {
             "state": "true",
-            "input-gain": "0",
+            "input-gain": "1",
             "output-gain": "0",
-            "amount": "2",
+            "amount": "-3",
             "harmonics": "8.5",
             "scope": "7500",
             "ceil": "16000",
-            "blend": "-5",
+            "blend": "-6",
             "ceil-active": "false",
             "listen": "false"
         },
@@ -341,19 +341,19 @@
             "range": "-22",
             "attack": "20",
             "release": "250",
-            "threshold": "-18",
+            "threshold": "-14",
             "ratio": "2",
             "knee": "9.0199999999999996",
             "makeup": "0"
         },
         "limiter": {
             "state": "false",
-            "input-gain": "0",
+            "input-gain": "-5",
             "limit": "0",
             "lookahead": "5",
             "release": "50",
             "asc": "false",
-            "asc-level": "0.5",
+            "asc-level": "0.55000000000000004",
             "oversampling": "1"
         },
         "maximizer": {
@@ -389,7 +389,7 @@
         },
         "multiband_compressor": {
             "state": "true",
-            "input-gain": "0",
+            "input-gain": "1",
             "output-gain": "0",
             "freq0": "120",
             "freq1": "1000",
@@ -411,30 +411,30 @@
                 "ratio": "1.9999999999999998",
                 "attack": "150",
                 "release": "300",
-                "makeup": "3",
+                "makeup": "1",
                 "knee": "9",
                 "detection": "RMS",
                 "bypass": "false",
                 "solo": "false"
             },
             "midband": {
-                "threshold": "-12",
+                "threshold": "-10",
                 "ratio": "2",
                 "attack": "150",
                 "release": "300",
-                "makeup": "1",
-                "knee": "9",
+                "makeup": "0",
+                "knee": "8",
                 "detection": "RMS",
-                "bypass": "false",
+                "bypass": "true",
                 "solo": "false"
             },
             "highband": {
-                "threshold": "-12",
-                "ratio": "2",
+                "threshold": "-10",
+                "ratio": "2.5",
                 "attack": "150",
                 "release": "300",
-                "makeup": "1",
-                "knee": "9",
+                "makeup": "3",
+                "knee": "8",
                 "detection": "RMS",
                 "bypass": "false",
                 "solo": "false"
@@ -582,30 +582,30 @@
                 "bypass": "false"
             },
             "band9": {
-                "intensity": "2",
+                "intensity": "-6",
                 "mute": "false",
                 "bypass": "false"
             },
             "band10": {
-                "intensity": "5",
+                "intensity": "-8",
                 "mute": "false",
                 "bypass": "false"
             },
             "band11": {
-                "intensity": "2",
+                "intensity": "-10",
                 "mute": "false",
                 "bypass": "false"
             },
             "band12": {
-                "intensity": "7",
+                "intensity": "-12",
                 "mute": "false",
                 "bypass": "false"
             }
         },
         "autogain": {
             "state": "false",
-            "detect-silence": "false",
-            "use-geometric-mean": "false",
+            "detect-silence": "true",
+            "use-geometric-mean": "true",
             "input-gain": "0",
             "output-gain": "0",
             "target": "-11",
