@@ -433,7 +433,7 @@
                 "ratio": "2",
                 "attack": "150",
                 "release": "300",
-                "makeup": "5",
+                "makeup": "1",
                 "knee": "9",
                 "detection": "RMS",
                 "bypass": "false",
